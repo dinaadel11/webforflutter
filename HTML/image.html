@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Learn Widgets</title>
+        <meta name="description" content="Learn widgets" />
+        <link rel="stylesheet" href="../css/section1.css">
+    </head>
+    <body>
+        <div class="defination">
+        <div class="Image">
+            <h3>Image</h3>
+            <p>he Image Widget in Flutter
+
+                In Flutter, the Image widget is used to display images within your app. It can be used to display images from various sources, including:
+                
+                Asset Images: Images stored in your app's asset bundle.   
+                Network Images: Images fetched from a remote URL.   
+                File Images: Images from the device's file system.
+                Key Properties:
+
+                image: The image provider, which can be an AssetImage, NetworkImage, or FileImage.
+                width and height: The desired width and height of the image.
+                fit: How the image should be resized to fit the given dimensions. Options include:
+                BoxFit.cover: The image will fill the entire space, possibly cropping the edges.
+                BoxFit.contain: The image will be scaled to fit within the space, preserving aspect ratio.
+                BoxFit.fill: The image will fill the entire space, ignoring aspect ratio.
+                BoxFit.none: The image will be displayed at its original size.
+                  
+                alignment: How the image should be aligned within the given space.
+                color: A color to blend with the image.   
+                colorBlendMode: The blending mode to use with the color.   
+
+            </p>
+        </div>
+        <div class="code-box">
+            <pre >
+                        <code>
+    Image.asset('assets/my_image.png')
+    width: 200,
+    height: 200,
+    fit: BoxFit.cover,
+                        </code>
+                    </pre>
+        </div>
+        <div class="imgimg">
+           <img src="../image/ar-inpixio-remove-background-interface.jpg">
+        </div>
+        </div>
+    </body>
+</html>

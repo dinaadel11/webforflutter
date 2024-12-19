@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <div class="registration-form">
+        <h2> make a new account</h2>
+        <form onsubmit="return handleRegistration(event)">
+            <input type="text" name="firstname" placeholder="First Name" required>
+            <input type="text" name="lastname" placeholder="Last Name" required>
+            <input type="text" name="username" placeholder=" username" required>
+
+            <input type="email" name="email" placeholder="Email Address">
+            <input type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{10}">
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+            <button type="submit">Register</button>
+        </form>
+        <a href="log_in.html" class="login-link">Already have an account? Login</a>
+    </div>
+
+    <script>
+        function handleRegistration(event) {
+            event.preventDefault(); 
+
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match. Please try again!");
+                return false;
+            }
+
+            alert("Registration successful! Redirecting to the home page...");
+            window.location.href = "index.html"; 
+            return true;
+        }
+    </script>
+</body>
+
+</html>

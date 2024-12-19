@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Learn Widgets</title>
+        <meta name="description" content="Learn widgets" />
+        <link rel="stylesheet" href="../css/section1.css">
+    </head>
+    <body>
+        <div class="defination">
+        <div class="Row">
+            <h3>Row</h3>
+            <p>The Row Widget in Flutter
+
+                In Flutter, the Row widget is a fundamental layout widget that arranges its children horizontally. It's a versatile tool for creating horizontal layouts, allowing you to align and space multiple widgets side-by-side.   
+                
+                Key Properties of a Row:
+                <ul>
+                <li>children: A list of widgets to be displayed horizontally.   </li>
+                mainAxisAlignment: Controls how the children are aligned along the main axis (horizontally). Common values include:
+               <li> MainAxisAlignment.start: Aligns children to the start.</li>
+                <li>MainAxisAlignment.end: Aligns children to the end.</li>
+                <li>MainAxisAlignment.center: Centers the children.</li>
+                <li>MainAxisAlignment.spaceAround: Spaces children evenly, with half-size spaces at the start and end.</li>
+                <li>MainAxisAlignment.spaceBetween: Spaces children evenly, with no space at the start and end.</li>
+                <li>MainAxisAlignment.spaceEvenly: Spaces children evenly, with equal spaces between and around the children.</li>
+                  
+                crossAxisAlignment: Controls how the children are aligned along the cross axis (vertically). Common values include:
+                <li>CrossAxisAlignment.start: Aligns children to the start.</li>
+                <li>CrossAxisAlignment.end: Aligns children to the end.</li>
+                <li>CrossAxisAlignment.center: Centers the children.</li>
+                <li>CrossAxisAlignment.stretch: Stretches the children to fill the available space.</li>
+                  
+                <li>mainAxisSize: Controls how the Row widget sizes itself. Common values include:</li>
+                <li>MainAxisSize.max: The Row will expand to fill the available space.</li>
+                <li>MainAxisSize.min: The Row will be as small as possible to fit its children.</li>
+            </ul>
+            </p>
+        </div>
+        <div class="code-box">
+            <pre >
+                        <code>
+                            Row(
+   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+   crossAxisAlignment: CrossAxisAlignment.center,
+  children: [
+   Icon(Icons.home),
+    Text('Home'),
+  Icon(Icons.search),
+     Text('Search'),
+  Icon(Icons.settings),
+     Text('Settings'),
+   ],
+      )
+                        </code>
+                    </pre>
+        </div>
+        <div class="rowimg">
+         <img src="../image/unnamed (1).jpg">
+        </div>
+        </div>
+    </body>
+</html>

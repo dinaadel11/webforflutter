@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Learn Widgets</title>
+        <meta name="description" content="Learn widgets" />
+        <link rel="stylesheet" href="../css/section1.css">
+    </head>
+    <body>
+        <div class="defination">
+        <div class="Scaffold">
+            <h3>Scaffold </h3>
+            <p>The Scaffold widget in Flutter is a basic layout structure that provides a framework for implementing
+                the visual design of the app.
+                It serves as the foundation for most screen layouts and includes slots for common app elements like
+                the AppBar,
+                Drawer, FloatingActionButton, and BottomNavigationBar.<br />
+                The Scaffold widget is used to quickly set up a screen structure with a lot of useful UI elements,
+                providing the basic layout structure for your app.
+                The Scaffold Widget in Flutter
+                <ol>
+                   <li>App Bar: A bar at the top of the screen that usually contains the app's title and navigation controls.   
+                </li>
+                <li>Body: The main content area of the app.
+                </li>
+                 <li>Floating Action Button (FAB): A circular button that hovers over the content, often used for primary actions.   
+                </li>
+                <li>Drawer: A panel that slides in from the side to provide additional navigation options.   
+                </li>
+                <li>BottomNavigationBar: A bar at the bottom of the screen for navigation between different views.   
+                </li>
+                <li>SnackBar: A temporary message displayed at the bottom of the screen.
+                </li>
+            </p>
+        </ol>
+        </div>
+        <div class="code-box">
+            <pre >
+                        <code>
+     <span style="color:rgb(118, 255, 6)">Scaffold(</span>
+     <span style="color: rgb(255, 255, 35);">appBar: AppBar(</span>
+      <span style="color: rgb(189, 122, 255);">title: Text('My App'),</span>
+      <span style="color: rgb(0, 225, 255);">actions: <Widget>[
+        IconButton(</span>
+        <span style="color: rgb(250, 175, 181);">icon: Icon(Icons.settings),
+       onPressed: () {}, ), ],),</span>
+          <span style="color: rgb(14, 255, 203);">body: Center(
+            child: Text('Hello, Scaffold!'),),</span>
+            <span style="color: rgb(105, 183, 255);">floatingActionButton: FloatingActionButton(
+              onPressed: () {},
+              child: Icon(Icons.add),
+               ),
+            ),</span>
+                        </code>
+                    </pre>
+        </div>
+        <div class="scaffoldimg">
+           <img src="../image/sssss.png">
+        </div>
+    </div>
+    </body>
+</html>

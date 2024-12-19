@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-image: url("../image/geometric-gradient-futuristic-background_23-2149116406.avif");
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-form {
+    background:rgb(0, 2, 141);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 300px;
+}
+
+.login-form h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #f6f4f4;
+    text-align: center;
+    text-shadow: 2px, 3px, 9px, purple;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(26, 25, 25);
+    border-radius: 10px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f5f5fd;
+    border: none;
+    color: rgb(29, 27, 127);
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #50c8ff;
+}
+
+.register-link {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}

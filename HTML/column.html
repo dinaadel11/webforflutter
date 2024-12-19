@@ -1,0 +1,67 @@
+<html>
+    
+        <head>
+            <meta charset="UTF-8" />
+            <title>Learn Widgets</title>
+            <meta name="description" content="Learn widgets" />
+            <link rel="stylesheet" href="../css/section1.css">
+        </head>
+        <body>
+            <div class="defination">
+                <div class="colum">
+                <h3>Column</h3>
+                <p>Column Widget in Flutter
+
+                    In Flutter, the Column widget is a fundamental layout widget that arranges its child widgets vertically, one below the other.
+                     It's a versatile tool for creating structured and organized layouts in your Flutter applications. 
+                    Key Properties of Column Widget:
+                    <ul>
+
+                    <li>mainAxisAlignment: Controls how the children are distributed along the main axis (vertical). 
+                    </li>
+                    <li>MainAxisAlignment.start: Aligns children to the start of the main axis.
+                    </li>
+                    <li>MainAxisAlignment.end: Aligns children to the end of the main axis.
+                    </li>
+                    <li>MainAxisAlignment.center: Centers the children along the main axis.</li>
+                    <li>MainAxisAlignment.spaceAround: Distributes space evenly around the children.</li>
+                    <li>MainAxisAlignment.spaceBetween: Distributes space evenly between the children.</li>
+                    <li>MainAxisAlignment.spaceEvenly: Distributes space evenly between the children,
+                        including the spaces at the beginning and end.</li>
+                    <li>crossAxisAlignment: Controls how the children are aligned along the cross axis (horizontal).  </li>
+                    
+                    <li>CrossAxisAlignment.start: Aligns children to the start of the cross axis.</li>
+                    <li>CrossAxisAlignment.end: Aligns children to the end of the cross axis.</li>
+                    <li>CrossAxisAlignment.center: Centers the children along the cross axis.</li>
+                    <li>CrossAxisAlignment.stretch: Stretches the children to fill the available width.</li>
+                </ul>
+                </p>
+                </div>
+                <div class="code-box">
+                <pre >
+                            <code>
+    class App extends StatelessWidget 
+    const App({super.key});
+    @override
+    Widget build(BuildContext context) {
+    debugPaintSizeEnabled = true;
+    return MaterialApp(
+     debugShowCheckedModeBanner: false,
+      home: Scaffold(
+      body: Column(
+         mainAxisSize: MainAxisSize.min,
+         children: buildWidgets(context),
+                   ),
+               ),
+                  );
+                 }
+                            </code>
+                        </pre>
+                        </div>
+                        <div class="columnimg">
+                         <img src="../image/unnamed.jpg" alt="">
+                        </div>
+            </div>
+        </body>
+    
+</html>

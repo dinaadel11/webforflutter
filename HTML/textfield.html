@@ -1,0 +1,79 @@
+            <html>
+                <head>
+                    <meta charset="UTF-8" />
+                    <title>Learn Widgets</title>
+                    <meta name="description" content="Learn widgets" />
+                    <link rel="stylesheet" href="../css/section1.css">
+                </head>
+                <body>
+                    <div class="defination">
+                        <div class="textfeild">
+                        <h3>TextField</h3>
+                        <p>TextField in Flutter
+
+                            A TextField is a fundamental widget in Flutter that allows users to input text into an app. It's used to build a variety of UI components, such as:
+                            <ul>
+                            <li>
+                            Forms: Collecting user information like name, email, and address.
+                            Search bars: Enabling users to search within the app.
+                            Message input fields: Facilitating text-based communication.
+                            Password fields: Securing sensitive information.
+                            Key Properties of TextField:
+                            </li>
+                            
+                            <li>
+                            decoration: Customizes the appearance of the TextField, including:
+                            labelText: Displays a label above the TextField.
+                            hintText: Provides a hint to the user about the expected input.
+                            </li>
+                            <li>border: Defines the border style (e.g., rounded, underlined).</li>
+                            <li>icon: Adds an icon to the TextField.</li>
+                        <li> suffixIcon: Adds an icon to the right side of the TextField.</li>
+                            <li>
+                            controller: Manages the text within the TextField, allowing you to:
+                            Set the initial value.
+                            Retrieve the current value.
+                            Clear the text.
+                            Add or remove text.
+                            </li>
+            <li>
+                    onChanged: A callback function that's triggered whenever the text in the TextField changes. This is useful for real-time validation or updating other parts of the UI.
+
+            </li>            
+            <li>
+                onSubmitted: A callback function that's triggered when the user submits the text (e.g., by pressing the Enter key)
+
+            </li>                </ul>
+                        </p>
+                        </div>
+                        <div class="code-box">
+                        <pre >
+                                    <code>
+ class CustomTextFeild extends StatelessWidget {
+ CustomTextFeild({required this.hinttext});
+ String? hinttext;
+ @override
+ Widget build(BuildContext context) {
+  return TextField(
+  decoration: InputDecoration(
+  hintText: hinttext,
+  hintStyle: TextStyle(color: Colors.white),
+  enabledBorder: OutlineInputBorder(
+  borderSide: BorderSide(color: Colors.white),
+                  ),
+  border: OutlineInputBorder(
+  borderSide: BorderSide(color: Colors.white),
+            ),
+          ),
+       );
+    }
+      }  </code>
+                                </pre>
+                    </div>
+                    <div class="feildimg">
+                        <img src="../image/RE.png">
+                    </div>
+
+                    </div>
+                </body>
+            </html>

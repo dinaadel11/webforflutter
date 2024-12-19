@@ -1,0 +1,51 @@
+body{
+    background: radial-gradient(circle,#750c70 ,#2e0b8f,#0b0583,#920e8c);
+}
+img{
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 30vw;
+    object-fit: cover;
+}
+div{
+    
+    color: white;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 20%;
+    padding-left: 20%;
+}
+div a{
+    background-color: white;
+    border-radius: 32px;
+    color: #0b0583;
+    border: 10px;
+    text-decoration: none;
+    margin-left: 150px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 60px;
+}
+.triangleone {
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    background: radial-gradient(circle,#750c70,#85377f,#920e8c,#a1659e);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1cm;
+    height: 1cm;
+}
+.triangletwo {
+    clip-path: polygon(0 100%, 100% 100%, 0 0);
+    background: radial-gradient(circle,#750c70,#920e8c,#8465a1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1cm;
+    height: 1cm;
+
+}

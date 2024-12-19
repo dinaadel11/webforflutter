@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Learn Widgets</title>
+        <meta name="description" content="Learn widgets" />
+        <link rel="stylesheet" href="../css/section1.css">
+    </head>
+    <body>
+        <div class="defination">
+        <div class="ElevatedButton">
+            
+            <h3>ElevatedButton</h3>
+            <p>ElevatedButton in Flutter
+
+                In Flutter, ElevatedButton is a material design button that appears elevated off the surface of the screen. It's commonly used for primary actions and is visually distinct from other button types.
+                
+                Key Properties:
+                <ul>
+                <li>onPressed: A callback function that's triggered when the button is pressed.   </li>
+                <li>child: The widget displayed inside the button, usually a Text widget.</li>
+                <li>style: A ButtonStyle object that allows you to customize the button's appearance, including:</li>
+                <li>backgroundColor</li>
+                <li>foregroundColor</li>
+                <li>elevation</li>
+                <li>shape</li>
+                <li>textStyle</li>
+                <li>And more</li>
+                Key Points:
+
+                 <li>Elevation: The button appears raised above the surface.   </li>
+                <li>Style Customization: You can tailor the button's appearance to match your app's theme.   </li>
+                <li>Accessibility: Ensure the button is accessible to users with disabilities by providing appropriate semantic information.</li>
+                 <li>Responsiveness: Consider how the button will look and behave on different screen sizes.</li>
+                 By effectively using ElevatedButton, you can create visually appealing and interactive user interfaces in your Flutter apps.
+                </ul>
+            </p>
+        </div>
+        <div class="code-box">
+            <pre >
+                        <code>
+      ElevatedButton(
+      onPressed: () {
+      // Handle button press
+              },
+      style: ElevatedButton.styleFrom(
+      primary: Colors.blue,
+      onPrimary: Colors.white,
+      shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(10.0),
+           ),
+           ),
+      child: Text('Custom Elevated Button'),
+           )
+                        </code>
+                    </pre>
+        </div>
+           <div class="buttonimg">
+            <img src="../image/gradient2133.jpg">
+           </div>
+        </div>
+    </body>
+</html>
